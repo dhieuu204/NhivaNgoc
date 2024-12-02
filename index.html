@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhi và Ngọc - Một Câu Chuyện Đặc Biệt</title>
+    <style>
+        /* Cơ bản */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f8ff, #ffb6c1);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: slideDown 1s ease-out forwards;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Content */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 50px 0;
+            padding: 0 20px;
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        .left, .right {
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .left:hover, .right:hover {
+            transform: scale(1.05);
+        }
+
+        .left {
+            background-color: #e0f7fa;
+        }
+
+        .right {
+            background-color: #f3e5f5;
+        }
+
+        h2 {
+            color: #ff1493;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+            animation: glow 2s infinite alternate, slideUp 1s ease-out forwards;
+        }
+
+        .footer p {
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+            animation: blink 1.5s infinite alternate;
+        }
+
+        /* Các hiệu ứng động */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left, .right {
+                width: 90%;
+                margin: 20px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nhi và Ngọc - Một Câu Chuyện Đặc Biệt</h1>
+</header>
+
+<div class="content">
+    <div class="left">
+        <h2>Nhi - Từ 3.5 Điểm Toán Đến Thành Công</h2>
+        <p>Trước đây, Nhi đã từng phải đối mặt với một kết quả đầy ấn tượng khi đạt 3.5 điểm trong kỳ thi Toán. Tuy nhiên, cô đã không chùn bước. Nhi nhận ra rằng điểm số chỉ là một phần của quá trình học tập, và cô đã dốc sức cải thiện từng ngày. Sau một thời gian cố gắng học hỏi, tham gia các lớp học bổ trợ và chăm chỉ ôn luyện, Nhi đã cải thiện rất nhiều và giờ đây cô ấy vẫn miệt mài để trở nên tốt hơn. Respect Nhi!</p>
+        <p>"Skibidi dom dom yes yes"-Nhi chia sẻ</p>
+        <p>-Điểm số không phải là tất cả, quan trọng là quá trình và sự cải thiện mỗi ngày-</p>
+    </div>
+
+    <div class="right">
+        <h2>Ngọc - Sau Cơn Mưa, Trời Lại Sáng</h2>
+        <p>Ngọc vừa trải qua một quãng thời gian khó khăn khi phải đối mặt với một mối quan hệ đầy tổn thương. Cô đã dành quá nhiều thời gian để yêu một người tồi và nhận lại không ít đau khổ. Tuy nhiên, sau tất cả, Ngọc đã tìm thấy niềm vui trong việc chăm sóc bản thân và dần dần trở lại với những đam mê của mình. Quan trọng hơn, cô mới tìm được một tình yêu mới, một tình yêu thật sự xứng đáng với những gì Ngọc đã bỏ qua trước đây.</p>
+        <p>"Ghét nk"-Ngọc ấm ức</p>
+        <p>-Tình yêu thật sự đến khi bạn không còn tìm kiếm nó, mà khi bạn yêu chính mình và trở nên mạnh mẽ-</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>ps: Nhã Uyên xinh gái</p>
+</div>
+
+<script>
+    // Hiệu ứng cuộn trang
+    window.addEventListener('scroll', function() {
+        let scrolled = window.scrollY;
+        let header = document.querySelector('header');
+        let contentLeft = document.querySelector('.left');
+        let contentRight = document.querySelector('.right');
+        
+        // Tạo hiệu ứng cuộn cho phần header
+        header.style.transform = `translateY(${scrolled * 0.1}px)`;
+        
+        // Tạo hiệu ứng cuộn cho phần content
+        contentLeft.style.transform = `translateY(${scrolled * 0.2}px)`;
+        contentRight.style.transform = `translateY(${scrolled * 0.2}px)`;
+    });
+</script>
+
+</body>
+</html>
